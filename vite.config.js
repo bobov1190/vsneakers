@@ -10,8 +10,9 @@ export default defineConfig({
     host: '0.0.0.0',
     port: process.env.PORT || 5173
   },
+  root: process.env.NODE_ENV === 'production' ? 'src' : '.',
   build: {
-    outDir: 'src',
+    outDir: 'dist',
     rollupOptions: {
       input: {
         main: 'index.html'
