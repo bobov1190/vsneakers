@@ -10,6 +10,14 @@ export default defineConfig({
     host: '0.0.0.0',
     port: process.env.PORT || 5173
   },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: 'index.html'
+      }
+    }
+  },
   plugins: [
     vue(),
     vueJsx(),
