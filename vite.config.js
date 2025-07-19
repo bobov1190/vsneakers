@@ -11,7 +11,7 @@ export default defineConfig({
     port: process.env.PORT || 5173
   },
   build: {
-    outDir: 'dist',
+    outDir: 'src',
     rollupOptions: {
       input: {
         main: 'index.html'
